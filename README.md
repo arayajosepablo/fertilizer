@@ -55,4 +55,4 @@ curl --location --request DELETE 'localhost:8080/v1/secrets/github/'
 Returns `200` when success, and `500` in case of error.
 
 ## Vault UI
-Vault UI can be used to check the changes performed through the API. Once docker compose is done open a browser and go to `http://localhost:8200/ui/vault/secrets`, the token is `00000000-0000-0000-0000-000000000000`.
+Vault UI can be used to check the changes performed through the API. Once docker compose is done open a browser and go to `http://localhost:8200/ui/vault/secrets`, the token is `00000000-0000-0000-0000-000000000000`. The engine is the one that says `secret/`. `test` is for the integration tests.
