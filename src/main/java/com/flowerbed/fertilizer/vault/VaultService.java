@@ -10,6 +10,6 @@ public interface VaultService {
 
   void putSecret(String path, String key, String value);
 
-  boolean isNewSecret(final String path, final String key);
+  boolean isNewSecret(String path, String key);
 
 }
