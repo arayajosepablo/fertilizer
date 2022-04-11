@@ -4,11 +4,12 @@ HTTP server that has endpoints for creating, reading and deleting secrets relate
 ## How to run it
 Docker is required.
 
-Note: the Dockerfile to build the Hashicorp's Vault image is for an AMD64 architecture, if this is going to be run in a M1 processor it should replace `[arch=amd64]` with `[arch=arm64]` in the line `4` of [/vault/Dockerfile](vault/Dockerfile) file.
 - First checkout the repository
 - Then `cd` to `theRepositoryPath/vault` and run ` chmod +x run.sh`. This `.sh` file add some seed data in the vault.
 - Next execute `cd ..` to return to root folder.
-- Finally execute `docker-compose up -d`. The first time this will take a few minutes.
+- Finally, execute `docker-compose up -d`. The first time this will take a few minutes.
+
+Note: the Dockerfile to build the Hashicorp's Vault image is for an AMD64 architecture, if this is going to be run in a M1 processor it should replace `[arch=amd64]` with `[arch=arm64]` in the line `4` of [/vault/Dockerfile](vault/Dockerfile) file.
 
 ## Endpoints
 ### 1. POST secret: localhost:8080/v1/secrets/
